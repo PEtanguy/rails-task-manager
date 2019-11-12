@@ -1,0 +1,5 @@
+<h1> <%= @task.title %></h1>
+
+<p><% @task.completed ? "[X] ": "[ ]"%> <%= @task.details %> </p>
+
+<%= link_to "new", new_task_path  %> <%= link_to "index", tasks_path %>
